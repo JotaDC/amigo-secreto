@@ -5,7 +5,7 @@ const agregarAmigo = () => {
     let amigo = document.querySelector('#amigo').value
     //Validaciones
     //Validar que el campo no esté vacío
-    if (trim(amigo) === '') {
+    if (amigo.trim() === '') {
         alert('Por favor, inserte un nombre')
         return
     } else {
@@ -21,7 +21,7 @@ const agregarAmigo = () => {
                 return
             }
             else {
-                amigos.push(amigo)
+                amigos.push(amigo.trim())
                 console.log(amigos)
                 document.querySelector('#amigo').value = ''
             }
