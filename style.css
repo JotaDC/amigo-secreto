@@ -160,3 +160,15 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    height: 60px;
+    width: 100%;
+}
