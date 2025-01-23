@@ -38,3 +38,13 @@ const mostrarAmigos = () => {
     }
     document.querySelector('#listaAmigos').innerHTML = amigosHTML
 }
+
+const sortearAmigo = () => {
+    if (amigos.length === 0) {
+        alert('Por favor, ingrese amigos')
+        return
+    }
+    let indice=Math.floor(Math.random() * amigos.length)
+    let amigoSorteado = amigos[indice]
+    document.querySelector('#resultado').innerHTML = amigoSorteado
+}
