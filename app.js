@@ -24,8 +24,17 @@ const agregarAmigo = () => {
                 amigos.push(amigo.trim())
                 console.log(amigos)
                 document.querySelector('#amigo').value = ''
+                mostrarAmigos()
             }
         }
     }
 
+}
+
+const mostrarAmigos = () => {
+    let amigosHTML = ''
+    for (let i = 0; i < amigos.length; i++) {
+        amigosHTML += `<li>${amigos[i]}</li>`
+    }
+    document.querySelector('#listaAmigos').innerHTML = amigosHTML
 }
